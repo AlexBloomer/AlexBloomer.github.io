@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="styles.css" />
     <title>Contact</title>
   </head>
   <body>
-    <nav>Navigate that shit</nav>
+    <h1>Contact</h1>
+    <nav class="navbar">
+      <!-- <h1 class="logo"><a href="index.html">Personal website</a></h1> -->
+      <ul class="nav-list">
+        <h1 class="Logo">
+          <a href="index.html">
+            <img
+              src="pictures\about_image.jpg"
+              alt="Alex Bloomer"
+              style="width: 54px; height: 61px; border-radius: 50%"
+            />
+          </a>
+        </h1>
+        <!-- <li><a href="index.html">Home</a></li> -->
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
     <main>
-      <p>Not sure what this is for</p>
+      <div class="input-form">
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="Name" /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br />
+          <label for="message">Leave<br />a message:</label>
+          <textarea id="message"></textarea><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </main>
-    <footer>© 2023 Alex Bloomer | All Rights Reserved</footer>
+    <div class="footer">
+      <footer>© 2023 Alex Bloomer | All Rights Reserved</footer>
+    </div>
   </body>
 </html>
