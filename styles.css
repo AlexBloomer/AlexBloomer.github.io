@@ -32,7 +32,8 @@ h1 {
   /* Optional: Ensure the navbar spans the full width */
   /* width: 100%;
   /* Optional: Fix the navbar to the top */
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   top: 0;
   left: 0;
   /* position: -webkit-sticky;
