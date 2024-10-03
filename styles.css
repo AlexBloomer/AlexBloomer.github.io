@@ -206,5 +206,6 @@ input[type="submit"] {
 }
 
 textarea {
-  max-width: 90%;
+  resize: vertical;
+  /* max-width: 90%; */
 }
