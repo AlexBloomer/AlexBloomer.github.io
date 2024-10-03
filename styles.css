@@ -27,7 +27,7 @@ h1 {
   width: 100%;
   height: 75px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -46,6 +46,8 @@ h1 {
 /* List of links to all pages in navbar */
 .nav-list {
   display: flex;
+  margin-left: auto;
+  margin-right: 0px;
 }
 
 /* All links in nav-list */
@@ -60,6 +62,33 @@ h1 {
 .nav-list a:hover {
   background-color: #ff009d;
   border-radius: 20%; /* curve edges*/
+}
+
+.icon-list {
+  display: flex;
+  padding: 15px;
+  list-style: none;
+}
+
+.icon-list img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.icon-item {
+  padding: 5px;
+}
+
+.icon-item:hover {
+  transform: scale(1.1);
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 /* End Navbar */
 
