@@ -96,26 +96,56 @@ h1 {
 
 /* Class for each project in portfolio */
 .Project {
+  justify-content: center;
+  min-height: 420px;
   display: flex;
   align-items: center;
   background-color: #ffb9f0;
   width: 70%;
+  max-width: 700px;
   margin: auto;
   color: rgb(177, 93, 93);
   border: 5px solid rgb(232, 0, 151);
+  transition: transform 0.3s ease;
+}
+
+/*Wraps the image that links to the project*/
+.project-image {
+  width: 60%;
+  max-width: 400px;
+}
+
+/* Wraps the details about the project */
+.project-details {
+  width: 40%;
 }
 
 /* Info about each project */
-.project-details {
-  width: 50%;
+.website-details {
   margin-left: 20px;
   text-align: center;
+}
+
+/* Info for the website project */
+.website {
+  height: 400px;
+  margin-left: 10px;
+  background-position: center center;
+  border-radius: 15%;
+  background-size: cover;
+  background-clip: border-box;
+  overflow: hidden;
+  background-image: url("pictures/website.png");
+}
+
+.website:hover {
+  transform: scale(1.03);
 }
 
 /* Resume */
 /* Title */
 .section-title {
-  /* margin-left: 40px; */
+  margin-left: 40px;
   text-align: center;
   color: rgb(177, 93, 93);
 }
@@ -133,7 +163,7 @@ h1 {
 }
 
 ul {
-  list-style: none;
+  list-style: none; /*get rid of bullet points in list*/
 }
 
 /* Resume download button */
@@ -156,7 +186,6 @@ ul {
   text-align: center;
   align-items: center;
   background-color: #ffb9f0;
-  /* width: fit-content; */
   width: 70%;
   margin: auto;
   color: rgb(177, 93, 93);
@@ -166,8 +195,6 @@ ul {
 
 /* Entire Form */
 form {
-  /* width: 100%; */
-  /* width: 500px; */
   margin: auto;
 }
 
@@ -207,5 +234,6 @@ input[type="submit"] {
 
 textarea {
   resize: vertical;
-  /* max-width: 90%; */
+  /*make it so user can only 
+  adjust height of textarea*/
 }
