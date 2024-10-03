@@ -1,125 +1,81 @@
-/* Reset default margins and padding */
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-/* Existing styles */
 html {
   background-color: rgb(255, 155, 215);
-  /* background-color: navy; */
 }
 body {
   margin: 0;
   padding-top: 60px;
 }
 
+/* Headings */
 h1 {
-  /* background-color: navy; */
   color: rgb(177, 93, 93);
   text-align: center;
 }
 
-/* a:visited {
-  color: white;
-} */
+/* Wraps body in every html file
+   Used to make navbar not cover everything on a phone
+*/
+.everything {
+  position: relative;
+}
 
+/* Navbar */
 .navbar {
   background-color: rgba(229, 88, 232, 0.589);
   position: absolute;
-  left: 0;
   top: 0;
   width: 100%;
-  height: 50px;
-  z-index: 10;
-
+  height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
-
-  padding: 0px 0px;
 }
 
-.nav-list {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  right: 0px;
-  list-style: none;
-}
-
+/* Logo links to home page */
 .logo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-
+  margin-left: 10px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-image: url("pictures/about_image.jpg");
 }
 
-.navbar a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-
-  /* margin-top: 20;
-  margin-bottom: 20; */
-}
-
-/* .navbar a:hover {
-  background-color: #ff009d;
-  color: black;
-  height: 60%;
+/* List of links to all pages in navbar */
+.nav-list {
   display: flex;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 10%;
-  z-index: 10;
-  } */
-.navbar a:hover {
-  /* display: inline-block; */
-  padding: 15px;
-  text-decoration: none;
-  background-color: #ff009d;
-  border-radius: 20%;
-
-  /* border- */
 }
 
-.navbar a.active {
-  color: white;
-}
-.navbar a.visited {
-  float: left;
+/* All links in nav-list */
+.nav-list a {
   color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  padding: 15px 15px;
+  text-decoration: none; /* get rid of underline */
+  font-size: 20px;
 }
 
+/* Hovering over link in nav-list */
+.nav-list a:hover {
+  background-color: #ff009d;
+  border-radius: 20%; /* curve edges*/
+}
+/* End Navbar */
+
+/* about-me section on home page */
 .about-me {
   text-align: center;
-  align-items: center;
   background-color: #ffb9f0;
   width: 60%;
   margin: auto;
   color: rgb(177, 93, 93);
   border: 5px solid rgb(232, 0, 151);
-  /* bottom: 10px; */
 }
 
+/* class for blog textbox */
 .blog {
   text-align: center;
-  align-items: center;
   background-color: #ffb9f0;
   width: 60%;
   margin: auto;
@@ -127,48 +83,43 @@ h1 {
   border: 5px solid rgb(232, 0, 151);
 }
 
+/* Footer */
 .footer {
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
-  /* background-color: red; */
   color: white;
   text-align: right;
 }
 
 /* Portfolio */
 
-.everything {
-  position: relative;
-}
-
+/* Class for each project in portfolio */
 .Project {
   display: flex;
-  /* text-align: center; */
   align-items: center;
-  justify-content: flex-start;
   background-color: #ffb9f0;
-  width: 60%; /* Parent width */
+  width: 60%;
   margin: auto;
   color: rgb(177, 93, 93);
   border: 5px solid rgb(232, 0, 151);
 }
 
+/* Info about each project */
 .project-details {
   width: 50%;
   margin-left: 20px;
   text-align: center;
-  /* margin: 10px 0; Proper margin */
 }
 
 /* Resume */
-
+/* Title */
 .section-title {
   margin-left: 40px;
   color: rgb(177, 93, 93);
 }
 
+/* Each entry */
 .entry {
   text-align: center;
   align-items: center;
@@ -178,20 +129,23 @@ h1 {
   color: rgb(177, 93, 93);
   border: 5px solid rgb(232, 0, 151);
   margin-bottom: 10px;
-  /* margin-top: 100; */
 }
 
 ul {
   list-style: none;
 }
 
+/* Resume download button */
 .download {
   text-align: center;
 }
 
+/* Resume download link */
 .download a {
   color: rgb(177, 93, 93);
 }
+
+/* Resume download hover */
 .download a:hover {
   color: white;
 }
@@ -202,26 +156,25 @@ ul {
   align-items: center;
   background-color: #ffb9f0;
   width: fit-content;
-  /* display: ; */
-  margin: 0 auto;
+  margin: auto;
   color: rgb(177, 93, 93);
   border: 5px solid rgb(232, 0, 151);
   margin-bottom: 10px;
 }
 
-label {
-  /* display: block; */
-  margin-bottom: 8px;
-  font-family: Georgia;
-  font-weight: bold;
-  /* color:black; */
-}
-
+/* Entire Form */
 form {
   width: 500px;
-  margin: 0 auto;
+  margin: auto;
 }
 
+/* label for each form input */
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* info for inputs in form */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -235,6 +188,7 @@ textarea {
   resize: none;
 }
 
+/* info for inputs in form when clicked on */
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
@@ -242,6 +196,7 @@ textarea:focus {
   outline: none;
 }
 
+/* submit button */
 input[type="submit"] {
   background-color: #ffb9f0;
   color: rgb(177, 93, 93);
