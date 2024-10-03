@@ -183,9 +183,7 @@ textarea {
   margin-bottom: 15px;
   background-color: rgba(229, 88, 232, 0.589);
   border: 1px solid rgb(232, 0, 151);
-  border-radius: 4px;
   font-size: 16px;
-  resize: none;
 }
 
 /* info for inputs in form when clicked on */
@@ -193,7 +191,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   border: 3px solid rgb(232, 0, 151);
-  outline: none;
+  outline: none; /*get rid of black border when clicked on */
 }
 
 /* submit button */
