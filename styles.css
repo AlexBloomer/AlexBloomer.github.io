@@ -1,12 +1,12 @@
 :root {
   --background-color: grey;
-  --bar-color: black;
+  --bar-color: rgba(93, 156, 211, 0.86);
   --bar-text-color: white;
-  --hover-color: blue;
-  --text-background-color: black;
+  --hover-color: rgba(34, 255, 0, 0.249);
+  --text-background-color: rgba(39, 2, 31, 0.249);
   --text-color: white;
   --title-text-color: white;
-  --text-border-color: blue;
+  --text-border-color: rgb(93, 156, 211);
 }
 
 html {
@@ -181,11 +181,32 @@ h1 {
 .website:hover {
   transform: scale(1.03);
 }
+/* Info about each project */
+.baseball-simulator-details {
+  margin-left: 20px;
+  text-align: center;
+}
+
+/* Info for the website project */
+.baseball-simulator {
+  height: 400px;
+  margin-left: 10px;
+  background-position: center center;
+  border-radius: 15%;
+  background-size: cover;
+  background-clip: border-box;
+  overflow: hidden;
+  background-image: url("pictures/baseball_simulator.png");
+}
+
+.baseball-simulator:hover {
+  transform: scale(1.03);
+}
 
 /* Resume */
 /* Title */
 .section-title {
-  margin-left: 40px;
+  /* margin-left: 40px; */
   text-align: center;
   color: var(--title-text-color);
 }
@@ -200,6 +221,20 @@ h1 {
   color: var(--title-text-color);
   border: 5px solid var(--text-border-color);
   margin-bottom: 10px;
+}
+
+.entry-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bullet-list {
+  list-style-position: inside;
+  list-style: inside;
+  text-align: left;
+  max-width: 80%;
 }
 
 ul {
