@@ -1,5 +1,16 @@
+:root {
+  --background-color: grey;
+  --bar-color: black;
+  --bar-text-color: white;
+  --hover-color: blue;
+  --text-background-color: black;
+  --text-color: white;
+  --title-text-color: white;
+  --text-border-color: blue;
+}
+
 html {
-  background-color: rgb(255, 155, 215);
+  background-color: var(--background-color);
 }
 body {
   margin: 0;
@@ -8,7 +19,7 @@ body {
 
 /* Headings */
 h1 {
-  color: rgb(177, 93, 93);
+  color: var(--title-text-color);
   text-align: center;
 }
 
@@ -21,7 +32,7 @@ h1 {
 
 /* Navbar */
 .navbar {
-  background-color: rgba(229, 88, 232, 0.589);
+  background-color: var(--bar-color);
   position: absolute;
   top: 0;
   width: 100%;
@@ -60,7 +71,7 @@ h1 {
 
 /* Hovering over link in nav-list */
 .nav-list a:hover {
-  background-color: #ff009d;
+  background-color: var(--hover-color);
   border-radius: 20%; /* curve edges*/
 }
 
@@ -95,21 +106,21 @@ h1 {
 /* about-me section on home page */
 .about-me {
   text-align: center;
-  background-color: #ffb9f0;
+  background-color: var(--text-background-color);
   width: 70%;
   margin: auto;
-  color: rgb(177, 93, 93);
-  border: 5px solid rgb(232, 0, 151);
+  color: var(--title-text-color);
+  border: 5px solid var(--text-border-color);
 }
 
 /* class for blog textbox */
 .blog {
   text-align: center;
-  background-color: #ffb9f0;
+  background-color: var(--text-background-color);
   width: 70%;
   margin: auto;
-  color: rgb(177, 93, 93);
-  border: 5px solid rgb(232, 0, 151);
+  color: var(--title-text-color);
+  border: 5px solid var(--text-border-color);
 }
 
 /* Footer */
@@ -129,12 +140,12 @@ h1 {
   min-height: 420px;
   display: flex;
   align-items: center;
-  background-color: #ffb9f0;
+  background-color: var(--text-background-color);
   width: 70%;
   max-width: 700px;
   margin: auto;
-  color: rgb(177, 93, 93);
-  border: 5px solid rgb(232, 0, 151);
+  color: var(--title-text-color);
+  border: 5px solid var(--text-border-color);
   transition: transform 0.3s ease;
 }
 
@@ -176,18 +187,18 @@ h1 {
 .section-title {
   margin-left: 40px;
   text-align: center;
-  color: rgb(177, 93, 93);
+  color: var(--title-text-color);
 }
 
 /* Each entry */
 .entry {
   text-align: center;
   align-items: center;
-  background-color: #ffb9f0;
+  background-color: var(--text-background-color);
   width: 70%;
   margin: auto;
-  color: rgb(177, 93, 93);
-  border: 5px solid rgb(232, 0, 151);
+  color: var(--title-text-color);
+  border: 5px solid var(--text-border-color);
   margin-bottom: 10px;
 }
 
@@ -202,7 +213,7 @@ ul {
 
 /* Resume download link */
 .download a {
-  color: rgb(177, 93, 93);
+  color: var(--title-text-color);
 }
 
 /* Resume download hover */
@@ -214,11 +225,11 @@ ul {
 .input-form {
   text-align: center;
   align-items: center;
-  background-color: #ffb9f0;
+  background-color: var(--text-background-color);
   width: 70%;
   margin: auto;
-  color: rgb(177, 93, 93);
-  border: 5px solid rgb(232, 0, 151);
+  color: var(--title-text-color);
+  border: 5px solid var(--text-border-color);
   margin-bottom: 10px;
 }
 
@@ -240,8 +251,8 @@ textarea {
   width: 90%;
   padding: 10px;
   margin-bottom: 15px;
-  background-color: rgba(229, 88, 232, 0.589);
-  border: 1px solid rgb(232, 0, 151);
+  background-color: var(--bar-color);
+  border: 1px solid var(--text-border-color);
   font-size: 16px;
 }
 
@@ -249,15 +260,15 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-  border: 3px solid rgb(232, 0, 151);
+  border: 3px solid var(--text-border-color);
   outline: none; /*get rid of black border when clicked on */
 }
 
 /* submit button */
 input[type="submit"] {
-  background-color: #ffb9f0;
-  color: rgb(177, 93, 93);
-  border: 3px solid rgb(232, 0, 151);
+  background-color: var(--text-background-color);
+  color: var(--title-text-color);
+  border: 3px solid var(--text-border-color);
   margin-bottom: 10px;
 }
 
