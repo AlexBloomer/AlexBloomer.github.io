@@ -108,6 +108,7 @@ h1 {
   text-align: center;
   background-color: var(--text-background-color);
   width: 70%;
+  max-width: 450px;
   margin: auto;
   color: var(--title-text-color);
   border: 5px solid var(--text-border-color);
