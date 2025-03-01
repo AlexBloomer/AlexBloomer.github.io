@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap");
+
 :root {
-  --background-color: grey;
-  --bar-color: rgba(93, 156, 211, 0.86);
+  --background-color: black;
+  --bar-color: grey;
   --bar-text-color: white;
   --hover-color: rgba(34, 255, 0, 0.249);
   --text-background-color: rgba(39, 2, 31, 0.249);
@@ -17,24 +19,40 @@ body {
   padding-top: 60px;
 }
 
+main {
+  align-items: center;
+  height: 75vh;
+  margin-top: 60px;
+}
+
 /* Headings */
 h1 {
   color: var(--title-text-color);
   text-align: center;
 }
 
+h3 {
+  margin-bottom: 0;
+}
+
 /* Wraps body in every html file
    Used to make navbar not cover everything on a phone
 */
 .everything {
+  padding: 0px;
   position: relative;
 }
 
 /* Navbar */
 .navbar {
-  background-color: var(--bar-color);
-  position: absolute;
+  /* background-color: var(--bar-color); */
+  /* position: absolute; */
   top: 0;
+  position: fixed;
+  z-index: 1000;
+  
+  margin-left: auto;
+  /* margin-top: 15px; */
   width: 100%;
   height: 75px;
   display: flex;
@@ -59,31 +77,55 @@ h1 {
   display: flex;
   margin-left: auto;
   margin-right: 0px;
+  padding: 15px;
+}
+
+/* All links in nav-list */
+.icon-list a {
+  color: #f2f2f2;
+  /* padding: 15px 15px; */
+  text-decoration: none; /* get rid of underline */
+  font-size: 20px;
 }
 
 /* All links in nav-list */
 .nav-list a {
   color: #f2f2f2;
-  padding: 15px 15px;
+  /* padding: 15px 15px; */
   text-decoration: none; /* get rid of underline */
   font-size: 20px;
 }
 
 /* Hovering over link in nav-list */
 .nav-list a:hover {
-  background-color: var(--hover-color);
-  border-radius: 20%; /* curve edges*/
+  /* background-color: var(--hover-color); */
+  transform: scale(1.1);
+}
+
+.nav_item {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  background-color: gray;
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+  border-radius: 20%;
 }
 
 .icon-list {
   display: flex;
   padding: 15px;
+  /* margin-left: 0px; */
+  margin-left: auto;
+  /* width: 25px;
+  height: 25px; */
   list-style: none;
 }
 
 .icon-list img {
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -91,10 +133,18 @@ h1 {
 }
 
 .icon-item {
-  padding: 5px;
+  padding: 7px;
+  margin: 10px;
+  background-color: grey;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
 }
 
 .icon-item:hover {
+  transform: scale(1.1);
+}
+.icon-list a:hover {
   transform: scale(1.1);
 }
 
@@ -105,13 +155,68 @@ h1 {
 
 /* about-me section on home page */
 .about-me {
+  margin-top: 25px;
   text-align: center;
-  background-color: var(--text-background-color);
-  width: 70%;
-  max-width: 450px;
+  align-items: center;
+  /* background-color: var(--text-background-color); */
+  width: 70vw;
+  height: 100%;
+  /* max-width: 450px; */
   margin: auto;
+  gap: 20px;
   color: var(--title-text-color);
-  border: 5px solid var(--text-border-color);
+  /* border: 5px solid var(--text-border-color); */
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.name {
+  font-family: "Chewy", cursive;
+  word-spacing: 0%;
+  font-size: 100px;
+  margin: 0px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: left;
+  height: 100%;
+  font-size: 35px;
+}
+
+.about-image {
+  width: 300px;
+  height: 300px;
+  margin: 30px 50px 50px 30px;
+}
+
+.about-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+}
+
+@media (max-width: 1150px) {
+  .about-me {
+    flex-direction: column;
+    align-items: center; /* Center items when stacked */
+    text-align: center; /* Center text for better look */
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-image img {
+    margin: 0; /* Remove extra margins */
+    width: 200px;
+    height: 200px;
+  }
 }
 
 /* class for blog textbox */
@@ -217,7 +322,7 @@ h1 {
   text-align: center;
   align-items: center;
   background-color: var(--text-background-color);
-  width: 70%;
+  width: 60%;
   margin: auto;
   color: var(--title-text-color);
   border: 5px solid var(--text-border-color);
