@@ -43,14 +43,11 @@ h3 {
   position: relative;
 }
 
-/* Navbar */
 .navbar {
-  /* background-color: var(--bar-color); */
-  /* position: absolute; */
   top: 0;
   position: fixed;
   z-index: 1000;
-  
+
   margin-left: auto;
   /* margin-top: 15px; */
   width: 100%;
@@ -91,14 +88,12 @@ h3 {
 /* All links in nav-list */
 .nav-list a {
   color: #f2f2f2;
-  /* padding: 15px 15px; */
-  text-decoration: none; /* get rid of underline */
+  text-decoration: none; /* get rid of underline on lists */
   font-size: 20px;
 }
 
 /* Hovering over link in nav-list */
 .nav-list a:hover {
-  /* background-color: var(--hover-color); */
   transform: scale(1.1);
 }
 
@@ -118,10 +113,7 @@ h3 {
 .icon-list {
   display: flex;
   padding: 15px;
-  /* margin-left: 0px; */
   margin-left: auto;
-  /* width: 25px;
-  height: 25px; */
   list-style: none;
 }
 
@@ -158,16 +150,12 @@ h3 {
   margin-top: 25px;
   text-align: center;
   align-items: center;
-  /* background-color: var(--text-background-color); */
   width: 70vw;
   height: 100%;
-  /* max-width: 450px; */
   margin: auto;
   gap: 20px;
   color: var(--title-text-color);
-  /* border: 5px solid var(--text-border-color); */
   display: flex;
-  /* flex-direction: column; */
 }
 
 .name {
@@ -180,7 +168,6 @@ h3 {
 .about-text {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   text-align: left;
   height: 100%;
@@ -188,24 +175,31 @@ h3 {
 }
 
 .about-image {
-  width: 300px;
-  height: 300px;
+  width: 20vw;
+  height: 20vw;
   margin: 30px 50px 50px 30px;
 }
 
 .about-image img {
-  width: 300px;
-  height: 300px;
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid white;
 }
 
-@media (max-width: 1150px) {
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+
+@media (max-width: 1300px) {
   .about-me {
     flex-direction: column;
-    align-items: center; /* Center items when stacked */
-    text-align: center; /* Center text for better look */
+    align-items: center; 
+    text-align: center; 
   }
 
   .about-text {
@@ -213,20 +207,14 @@ h3 {
   }
 
   .about-image img {
-    margin: 0; /* Remove extra margins */
-    width: 200px;
-    height: 200px;
+    margin: 0;
+    align-items: center;
   }
-}
+  .about-image {
+    margin: 0;
 
-/* class for blog textbox */
-.blog {
-  text-align: center;
-  background-color: var(--text-background-color);
-  width: 70%;
-  margin: auto;
-  color: var(--title-text-color);
-  border: 5px solid var(--text-border-color);
+    align-items: center;
+  }
 }
 
 /* Footer */
@@ -360,61 +348,4 @@ ul {
 /* Resume download hover */
 .download a:hover {
   color: white;
-}
-
-/* Contact */
-.input-form {
-  text-align: center;
-  align-items: center;
-  background-color: var(--text-background-color);
-  width: 70%;
-  margin: auto;
-  color: var(--title-text-color);
-  border: 5px solid var(--text-border-color);
-  margin-bottom: 10px;
-}
-
-/* Entire Form */
-form {
-  margin: auto;
-}
-
-/* label for each form input */
-label {
-  margin-bottom: 8px;
-  font-weight: bold;
-}
-
-/* info for inputs in form */
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 15px;
-  background-color: var(--bar-color);
-  border: 1px solid var(--text-border-color);
-  font-size: 16px;
-}
-
-/* info for inputs in form when clicked on */
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  border: 3px solid var(--text-border-color);
-  outline: none; /*get rid of black border when clicked on */
-}
-
-/* submit button */
-input[type="submit"] {
-  background-color: var(--text-background-color);
-  color: var(--title-text-color);
-  border: 3px solid var(--text-border-color);
-  margin-bottom: 10px;
-}
-
-textarea {
-  resize: vertical;
-  /*make it so user can only 
-  adjust height of textarea*/
 }
