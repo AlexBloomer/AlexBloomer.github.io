@@ -5,7 +5,6 @@
     <title>Alex Bloomer</title>
   </head>
   <body class="everything">
-    <!-- <p style="color: white">Hello</p> -->
     <nav class="navbar">
       <ul class="icon-list">
         <li class="icon-item" style="margin-left: 0px">
@@ -47,65 +46,148 @@
             </svg>
           </a>
         </li>
-        <li class="nav_item"><a href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
       </ul>
     </nav>
     <main>
-      <h1 class="page-title">Resume</h1>
-      <div class="download">
-        <a href="AlexBloomerResume.pdf" class="button" download
-          >Download Resume</a
-        >
+      <div class="page-title-wrap">
+        <h1 class="page-title">Resume</h1>
+        <a href="AlexBloomerResume.pdf"
+          class="icon-button"
+          download
+          aria-label="Download resume (PDF)">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+            <path d="M12 3a1 1 0 0 1 1 1v8.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L11 12.6V4a1 1 0 0 1 1-1zM5 18a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/>
+          </svg>
+          <span class="sr-only">Download resume</span>
+        </a>
       </div>
+
+
+
       <div class="resume">
         <section>
+          <!-- ALL EDUCATION -->
           <h2 class="section-title">Education</h2>
+
+          <!-- CAL POLY -->
           <div class="entry">
             <h3 class="entry-title">
-              California Polytechnic State University, San Luis Obispo
+              California Polytechnic State University, San Luis Obispo (Cal Poly)
             </h3>
             <div class="entry-info">
-              <p>
-                Bachelor of Science in Computer Science | GPA: 4.0 | Expected
-                Graduation June 2028<br />
-                <em>Relevant Coursework: </em> CSC 203: Project-Based
-                Object-Oriented Programming and Design (Java), CPE 225:
-                Introduction to Computer Organization (C, Assembly), Calculus 3,
-                Linear Analysis
-              </p>
+              <div class="meta">
+                <span class="degree">B.S. Computer Science</span>
+                <span class="sep">|</span>
+                <span class="gpa">GPA 3.862</span>
+                <span class="sep">|</span>
+                <time datetime="2028-06">Expected Jun 2028</time>
+              </div>
+              <ul style="list-style: none;">
+                <li>
+                  Dean's List (3/3 quarters)
+                </li>
+                <li>
+                  <em>Relevant Coursework: </em> 
+                  <ul class="coursework">
+                    <li>CSC 203: Project-Based OOP (Java)</li>
+                    <li>CPE 225: Computer Organization (C, Assembly)</li>
+                    <li>CSC 357: Systems Programming</li>
+                    <li>MATH 143: Calculus III</li>
+                    <li>MATH 244: Linear Analysis I</li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
+
+          <!-- ELCO -->
+          <div class="entry">
+            <h3 class="entry-title">El Camino College, Torrance, CA</h3>
+            <div class="entry-info">
+              <div class="meta">
+                <span class="degree">No Degree</span>
+                <span class="sep">|</span>
+                <span class="gpa">GPA 3.75</span>
+              </div>
+              <ul style="list-style: none;">
+                <li>
+                  <em>Relevant Coursework:</em> 
+                  <ul class="coursework">
+                    <li>Computer Science 1: Problem Solving and Program Design using C++</li>
+                    <li>Computer Science 2: Introduction to Data Structures (C++)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- RUHS -->
           <div class="entry">
             <h3 class="entry-title">
               Redondo Union High School, Redondo Beach California
             </h3>
             <div class="entry-info">
-              <p>
-                High School Diploma | GPA: 4.5<br />
-                <em>Relevant Coursework:</em> AP Computer Science A, AP Computer
-                Science Principles, AP Calculus AB, AP Calculus BC, AP Physics 1
-              </p>
-            </div>
-          </div>
-          <div class="entry">
-            <h3 class="entry-title">El Camino College, Torrance, CA</h3>
-            <div class="entry-info">
-              <p>
-                No Degree | GPA: 3.75<br />
-                <em>Relevant Coursework:</em> : Computer Science 1: Problem
-                Solving and Program Design using C++, Computer Science 2:
-                Introduction to Data Structures (C++)
-              </p>
+              <div class="meta" style="margin-bottom: 10px;">
+                <span class="degree">High School Diploma</span>
+                <span class="sep">|</span>
+                <span class="gpa">GPA 4.5</span>
+              </div>
+              <ul style="list-style: none;">
+                <li>
+                  <em>Relevant Coursework:</em> 
+                  <ul class="coursework">
+                    <li>AP Computer Science A</li>
+                    <li>AP Computer Science Principles</li>
+                    <li>AP Calculus AB</li>
+                    <li>AP Calculus BC</li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
+
+
+        <!-- ALL EXPERIENCE -->
         <section>
           <h2 class="section-title">Experience</h2>
+
+          <!-- UNDERGRADUATE RESEARCH -->
           <div class="entry">
-            <h3 class="entry-title">Boeing Software Engineering Intern</h3>
+            <h3 class="entry-title">Undergraduate Researcher<br> <h4> Cal Poly SLO | San Luis Obispo, CA</h4></h3>
             <div class="entry-info">
-              <p style="margin-bottom: 0">Boeing | June 2023 - August 2023</p>
-              <ul class="bullet-list">
+              <div class="meta">
+                <span class="start">June 2025</span>
+                <span class="sep"> - </span>
+                <span class="end">Present</span>
+              </div>
+              <ul>
+                <li>
+                  Developed real-time robotic control system to move UFactory xArm 
+                  and UR3e arms with Meta Quest VR hand tracking
+                </li>
+                <li>
+                  Integrated MQTT pose streaming from the Quest to control robot movement
+                </li>
+                <li>
+                  Designed smooth Cartesian velocity and position control to 
+                  ensure smooth and accurate responses
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- BOEING INTERNSHIP -->
+          <div class="entry">
+            <h3 class="entry-title">Software Engineering Intern <h4> The Boeing Company | El Segundo, CA</h4></h3>
+            <div class="entry-info">
+              <div class="meta">
+                <span class="start">June 2023</span>
+                <span class="sep"> - </span>
+                <span class="end">August 2023</span>
+              </div>
+              <ul class="">
                 <li>
                   Collaborated with software engineers to create robust pipeline
                   for ensuring safety and security in code
@@ -117,16 +199,80 @@
               </ul>
             </div>
           </div>
+
+          <!-- CAL POLY ROBOTICS -->
           <div class="entry">
-            <h3 class="entry-title">The Coder School Code Coach</h3>
+            <h3 class="entry-title">
+              Software Engineer <h4> Cal Poly Robotics Club | San Luis Obispo, CA </h4>
+            </h3>
             <div class="entry-info">
-              <p style="margin-bottom: 0">
-                The Coder School | March 2023 - January 2024
-              </p>
-              <ul class="bullet-list">
+              <div class="meta">
+                <span class="start">August 2024</span>
+                <span class="sep"> - </span>
+                <span class="end">Present</span>
+              </div>
+              <ul>
+                <li>
+                  Designed and developed a Django-based website to remotely control a robotic boat
+                </li>
+                <li>
+                  Used agile development process to achieve goals efficiently
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- BEACH CITIES ROBOTICS -->
+          <div class="entry">
+            <h3 class="entry-title">
+              Software Engineer | Lead Technician | Co-Driver <h4> Beach Cities Robotics | Redondo Beach, CA </h4>
+            </h3>
+            <div class="entry-info">
+              <div class="meta">
+                <span class="start">August 2020</span>
+                <span class="sep"> - </span>
+                <span class="end">June 2024</span>
+              </div>
+              <ul>
+                <li>
+                  Collaborated with team members to design, build, and program
+                  several robots
+                </li>
+                <li>
+                  Applied programming concepts to control robots using Java
+                </li>
+                <li>
+                  Led setup and troubleshooting of the robot as lead technician
+                </li>
+                <li>
+                  Cooperated with another driver to operate the robot in
+                  competitions, winning a regional competition, a World
+                  Championships division Championship, and reaching World
+                  Championship finals
+                </li>
+                <li>
+                  Won Excellence in Engineering Award and Entrepreneurship
+                  Award
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CODER SCHOOL -->
+          <div class="entry">
+            <h3 class="entry-title"><h3 class="entry-title">
+              Code Coach <h4> The Coder School | Redondo Beach, CA </h4>
+            </h3></h3>
+            <div class="entry-info">
+              <div class="meta">
+                <span class="start">March 2023</span>
+                <span class="sep"> - </span>
+                <span class="end">January 2024</span>
+              </div>
+              <ul >
                 <li>
                   Taught students from 6 to 18 to code in various languages and
-                  frameworks <br />&emsp;&ensp;including Python, JavaScript, C#,
+                  frameworks including Python, JavaScript, C#,
                   Java, C++, CSS, HTML, Scratch, and Unity
                 </li>
                 <li>
@@ -140,73 +286,16 @@
               </ul>
             </div>
           </div>
-          <div class="entry">
-            <h3 class="entry-title">
-              Beach Cities Robotics Software Engineer/Co-Driver
-            </h3>
-            <div class="entry-info">
-              <p style="margin-bottom: 0">
-                Beach Cities Robotics | August 2020 - June 2024
-              </p>
-              <ul class="bullet-list">
-                <li>
-                  Collaborated with team members to design, build, and program
-                  several robots.
-                </li>
-                <li>
-                  Applied programming concepts to control robots using Java.
-                </li>
-                <li>
-                  Led setup and troubleshooting of the robot as lead technician.
-                </li>
-                <li>
-                  Cooperated with another driver to operate the robot in
-                  competitions, winning a regional competition, a World
-                  Championships division Championship, and reaching World
-                  Championship finals.
-                </li>
-                <li>
-                  Won Excellence in Engineering Award and Entrepreneurship
-                  Award.
-                </li>
-              </ul>
-            </div>
-          </div>
+
         </section>
-        <section>
-          <h2 class="section-title">Skills</h2>
-          <div class="entry">
-            <h3 class="entry-title">Programming Languages</h3>
-            <div class="entry-info">
-              <ul>
-                <li>Java</li>
-                <li>C++</li>
-                <li>C#</li>
-                <li>Javascript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-            </div>
-          </div>
-          <div class="entry">
-            <h3 class="entry-title">Software Tools</h3>
-            <div class="entry-info">
-              <ul>
-                <li>Unity</li>
-                <li>Microsoft Excel</li>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>Visual Studio Code</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+        
+        <!-- PROJECTS -->
         <section>
           <h2 class="section-title">Projects</h2>
           <div class="entry">
             <h3 class="entry-title">Baseball Simulator</h3>
             <div class="entry-info">
-              <ul class="bullet-list">
+              <ul >
                 <li>
                   Developed a Python-based baseball simulator with Flask web
                   interface
@@ -235,7 +324,7 @@
           <div class="entry">
             <h3 class="entry-title">Personal Website</h3>
             <div class="entry-info">
-              <ul class="bullet-list">
+              <ul >
                 <li>
                   Designed and built a multi-page personal website using HTML
                   and CSS.
@@ -252,7 +341,7 @@
               Chrome Extension for Video Speed Control
             </h3>
             <div class="entry-info">
-              <ul class="bullet-list">
+              <ul >
                 <li>
                   Created a Chrome extension that allows users to speed up or
                   slow down videos with custom button clicks.
@@ -265,6 +354,37 @@
             </div>
           </div>
         </section>
+
+        <!-- SKILLS -->
+        <section>
+          <h2 class="section-title">Skills</h2>
+          <div class="entry">
+            <div class="entry-info">
+              <ul class="skills-grid">
+                <li class="chip">Python</li>
+                <li class="chip">Java</li>
+                <li class="chip">C++</li>
+                <li class="chip">JavaScript</li>
+                <li class="chip">C#</li>
+                <li class="chip">C</li>
+                <li class="chip">Assembly</li>
+                <li class="chip">HTML/CSS</li>
+                <li class="chip">Git/GitHub</li>
+                <li class="chip">VS Code</li>
+                <li class="chip">IntelliJ</li>
+                <li class="chip">Docker</li>
+                <li class="chip">Bash</li>
+                <li class="chip">WSL</li>
+                <li class="chip">MQTT</li>
+                <li class="chip">JSON</li>
+                <li class="chip">Django</li>
+                <li class="chip">Flask</li>
+                <li class="chip">Unity</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
       </div>
     </main>
     <footer class="footer">© 2024 Alex Bloomer | All Rights Reserved</footer>

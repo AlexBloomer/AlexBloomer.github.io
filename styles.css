@@ -2,11 +2,7 @@
 
 :root {
   --background-color: black;
-  --bar-color: grey;
-  --bar-text-color: white;
-  --hover-color: rgba(34, 255, 0, 0.249);
   --text-background-color: rgba(39, 2, 31, 0.249);
-  --text-color: white;
   --title-text-color: white;
   --text-border-color: rgb(93, 156, 211);
 }
@@ -35,74 +31,41 @@ h3 {
   margin-bottom: 0;
 }
 
-/* Wraps body in every html file
-   Used to make navbar not cover everything on a phone
-*/
+h4{
+  text-align: left; 
+  margin-left: 10%; 
+  margin-top:auto; 
+  margin-bottom: auto;
+}
+
 .everything {
   padding: 0px;
   position: relative;
 }
 
+/* ALL NAVBAR STUFF */
+
 .navbar {
   top: 0;
   position: fixed;
-  z-index: 1000;
-
-  margin-left: auto;
-  /* margin-top: 15px; */
   width: 100%;
   height: 75px;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
-/* Logo links to home page */
-.logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-left: 10px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-image: url("pictures/about_image.jpg");
-}
-
-/* List of links to all pages in navbar */
-.nav-list {
-  display: flex;
-  margin-left: auto;
-  margin-right: 0px;
-  padding: 15px;
-}
-
-/* All links in nav-list */
+/* All icons in nav-list */
 .icon-list a {
   color: #f2f2f2;
-  /* padding: 15px 15px; */
   text-decoration: none; /* get rid of underline */
   font-size: 20px;
 }
 
-/* All links in nav-list */
-.nav-list a {
-  color: #f2f2f2;
-  text-decoration: none; /* get rid of underline on lists */
-  font-size: 20px;
-}
 
-/* Hovering over link in nav-list */
-.nav-list a:hover {
-  transform: scale(1.1);
-}
-
-.nav_item {
+.nav-item {
   display: flex;
-  text-align: center;
   justify-content: center;
   align-items: center;
-  vertical-align: center;
   background-color: gray;
   margin: 10px;
   width: 100px;
@@ -114,14 +77,6 @@ h3 {
   display: flex;
   padding: 15px;
   margin-left: auto;
-  list-style: none;
-}
-
-.icon-list img {
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }
 
 .icon-item {
@@ -140,27 +95,21 @@ h3 {
   transform: scale(1.1);
 }
 
-.logo:hover {
-  transform: scale(1.1);
-}
-/* End Navbar */
+
+/* END NAVBAR */
+
 
 /* about-me section on home page */
 .about-me {
-  margin-top: 25px;
-  text-align: center;
-  align-items: center;
   width: 70vw;
   height: 100%;
   margin: auto;
-  gap: 20px;
   color: var(--title-text-color);
   display: flex;
 }
 
 .name {
   font-family: "Chewy", cursive;
-  word-spacing: 0%;
   font-size: 100px;
   margin: 0px;
 }
@@ -169,7 +118,6 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
   height: 100%;
   font-size: 35px;
 }
@@ -192,9 +140,9 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center; 
-  align-items: center; 
 }
 
+/* IF WIDTH IS SMALLER THAN 1300PX THESE CHANGES APPLY */
 @media (max-width: 1300px) {
   .about-me {
     flex-direction: column;
@@ -226,7 +174,7 @@ h3 {
   text-align: right;
 }
 
-/* Portfolio */
+/* FOOTER */
 
 /* Class for each project in portfolio */
 .Project {
@@ -243,66 +191,50 @@ h3 {
   transition: transform 0.3s ease;
 }
 
-/*Wraps the image that links to the project*/
+/* The image that links to the project */
 .project-image {
   width: 60%;
   max-width: 400px;
+  height: 400px;
+  margin-left: 10px;
+  background-position: center center;
+  border-radius: 15%;
+  background-size: cover;
+  background-clip: border-box;
+  overflow: hidden;
 }
 
 /* Wraps the details about the project */
 .project-details {
   width: 40%;
-}
-
-/* Info about each project */
-.website-details {
-  margin-left: 20px;
   text-align: center;
+  margin-left: 2%;
 }
 
-/* Info for the website project */
-.website {
-  height: 400px;
-  margin-left: 10px;
-  background-position: center center;
-  border-radius: 15%;
-  background-size: cover;
-  background-clip: border-box;
-  overflow: hidden;
-  background-image: url("pictures/website.png");
-}
-
-.website:hover {
-  transform: scale(1.03);
-}
-/* Info about each project */
-.baseball-simulator-details {
-  margin-left: 20px;
-  text-align: center;
-}
-
-/* Info for the website project */
-.baseball-simulator {
-  height: 400px;
-  margin-left: 10px;
-  background-position: center center;
-  border-radius: 15%;
-  background-size: cover;
-  background-clip: border-box;
-  overflow: hidden;
-  background-image: url("pictures/baseball_simulator.png");
-}
-
-.baseball-simulator:hover {
+.project-image:hover {
   transform: scale(1.03);
 }
 
-/* Resume */
-/* Title */
+/* ALL RESUME STUFF */
+
+/* Download button */
+/* visually-hidden text for screen readers */
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+
+
+/* Section Title */
 .section-title {
-  /* margin-left: 40px; */
   text-align: center;
   color: var(--title-text-color);
+}
+
+/* Entry Title */
+.entry-title {
+  text-align: left;
+  margin-left: 10%;
 }
 
 /* Each entry */
@@ -317,35 +249,86 @@ h3 {
   margin-bottom: 10px;
 }
 
+/* Infor for each entry */
 .entry-info {
+  margin-left: 10%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
+  text-align: left;
+  
 }
 
-.bullet-list {
-  list-style-position: inside;
-  list-style: inside;
+.entry-info ul{
   text-align: left;
   max-width: 80%;
+  list-style-type: disc;
+  margin-left: 1.25em;    /* space for bullet */
+  padding-left: 0;        /* no extra padding */
 }
 
-ul {
-  list-style: none; /*get rid of bullet points in list*/
+.entry-info li {
+  text-indent: -.75em;   /* pulls first line back so wraps align */
+  padding-left: .75em;   /* keeps bullet space consistent */
 }
 
-/* Resume download button */
-.download {
-  text-align: center;
+
+
+/* Grid for skills list */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: .5rem .75rem;
+  padding: 0;
+  margin: .25rem 1rem 1rem;
+  margin-right: 10%;
+  margin-top: 2%;
+  list-style: none;
+  text-align: left;
 }
 
-/* Resume download link */
-.download a {
+
+
+/* Pill/badge style */
+.chip {
+  display: inline-block;
+  padding: .35rem .6rem;
+  border-radius: 999px;
+  border: 1px solid var(--text-border-color);
+  background: rgba(255,255,255,0.05);
+  color: var(--title-text-color);
+  font-size: .95rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Subtle hover for interactivity (optional) */
+.chip:hover { transform: translateY(-1px); }
+
+.icon-list { list-style: none; padding-left: 0; }
+
+/* HEADER AND DOWNLOAD BUTTON */
+.page-title-wrap {
+  display: flex;
+  justify-content: center; /* keeps centered on page */
+  align-items: center;
+  gap: 0.5rem;             /* space between text and icon */
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  margin: 0;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  border: 2px solid var(--text-border-color);
   color: var(--title-text-color);
 }
 
-/* Resume download hover */
-.download a:hover {
-  color: white;
-}
+.icon-button:hover { transform: translateY(-1px); background: rgba(255,255,255,.08); }
+.icon { width: 22px; height: 22px; fill: currentColor; }
