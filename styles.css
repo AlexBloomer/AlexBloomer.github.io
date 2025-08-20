@@ -101,9 +101,10 @@ h4{
 
 /* about-me section on home page */
 .about-me {
-  width: 70vw;
+  max-width: 70vw;
   height: 100%;
-  margin: auto;
+  margin-left: 15%;
+  margin-right: 0px;
   color: var(--title-text-color);
   display: flex;
 }
@@ -117,20 +118,21 @@ h4{
 .about-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-top: 120px;
   height: 100%;
   font-size: 35px;
 }
 
 .about-image {
-  width: 20vw;
-  height: 20vw;
+  width: 16vw;
+  height: 16vw;
   margin: 30px 50px 50px 30px;
 }
 
 .about-image img {
-  width: 20vw;
-  height: 20vw;
+  width: 16vw;
+  height: 16vw;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid white;
@@ -140,27 +142,43 @@ h4{
   display: flex;
   flex-direction: column;
   justify-content: center; 
+  align-items: center;
 }
 
 /* IF WIDTH IS SMALLER THAN 1300PX THESE CHANGES APPLY */
-@media (max-width: 1300px) {
+@media (max-width: 1240px) {
   .about-me {
+    margin: auto;
     flex-direction: column;
     align-items: center; 
     text-align: center; 
+    height: 50%;
   }
 
   .about-text {
+    margin-top: auto;
     text-align: center;
+    font-size: 5vw;
+  }
+
+  .name{
+    font-size: 11vw
   }
 
   .about-image img {
     margin: 0;
     align-items: center;
+    width: 40vw;
+    height: 40vw;
+    max-width: 250px;
+    max-height: 250px;
   }
   .about-image {
     margin: 0;
-
+    width: 40vw;
+    height: 40vw;
+    max-width: 250px;
+    max-height: 250px;
     align-items: center;
   }
 }
@@ -218,7 +236,6 @@ h4{
 /* ALL RESUME STUFF */
 
 /* Download button */
-/* visually-hidden text for screen readers */
 .sr-only{
   position:absolute; width:1px; height:1px; padding:0; margin:-1px;
   overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
@@ -262,13 +279,13 @@ h4{
   text-align: left;
   max-width: 80%;
   list-style-type: disc;
-  margin-left: 1.25em;    /* space for bullet */
-  padding-left: 0;        /* no extra padding */
+  margin-left: 1.25em;    
+  padding-left: 0;        
 }
 
 .entry-info li {
-  text-indent: -.75em;   /* pulls first line back so wraps align */
-  padding-left: .75em;   /* keeps bullet space consistent */
+  text-indent: -.75em;  
+  padding-left: .75em;   
 }
 
 
@@ -280,15 +297,15 @@ h4{
   gap: .5rem .75rem;
   padding: 0;
   margin: .25rem 1rem 1rem;
-  margin-right: 10%;
-  margin-top: 2%;
+  /* margin-right: 10%; */
+  /* margin-top: 2%; */
+  margin: .5rem 10% 1rem 1rem;
   list-style: none;
-  text-align: left;
 }
 
 
 
-/* Pill/badge style */
+/* Pill style */
 .chip {
   display: inline-block;
   padding: .35rem .6rem;
@@ -299,9 +316,9 @@ h4{
   font-size: .95rem;
   line-height: 1;
   white-space: nowrap;
+  text-align: center;
 }
 
-/* Subtle hover for interactivity (optional) */
 .chip:hover { transform: translateY(-1px); }
 
 .icon-list { list-style: none; padding-left: 0; }
@@ -309,9 +326,9 @@ h4{
 /* HEADER AND DOWNLOAD BUTTON */
 .page-title-wrap {
   display: flex;
-  justify-content: center; /* keeps centered on page */
+  justify-content: center; 
   align-items: center;
-  gap: 0.5rem;             /* space between text and icon */
+  gap: 0.5rem;             
   margin-bottom: 1rem;
 }
 
